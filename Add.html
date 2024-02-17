@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a new Patient</title>
+    <link rel="stylesheet" href="design.css">
+	<link rel="stylesheet" id="switch_id" href="">
+	
+</head>
+<body onload="calc();">
+
+    <header>
+        <nav>
+    
+    
+            <div class="logo" style="text-align: left; ">
+                <a href="Home.html"><img src="logo.png" alt="Salamatuk website logo"  ></a>
+    
+            </div>
+    
+            <div>
+                <form class="search">
+                    <input class="search" type="search" placeholder="Search...">
+                </form>
+            </div>
+    
+            <div class="lang-menu">
+                <div class="selected-language">
+                    <!-- <img src="us.svg" alt="united states" width="20" height="20"> -->
+                    English
+
+                </div>
+    
+                <ul>
+                    <li>
+                        <a href="#" class="us">English</a>
+                    </li>
+                    <li>
+                        <a href="#" class="ar">Arabic</a>
+                    </li>
+                </ul>
+    
+            </div>
+    
+    
+        </nav>
+		<div class="main_menu">
+    <nav> 
+	
+	    
+	    <a href = "Home.html" accesskey="h">Home</a> 
+        <a href= "Hospital.html" accesskey="1" > Hospital </a> 
+        <a href= "ER.html" accesskey="2" > ER </a> 
+		<a href = "Doctors.html" accesskey="3">Doctors</a> 
+        <a href= "Patients.html" accesskey="4" > Patients </a> 
+        <a href= "Billing.html" accesskey="5"> Billing </a>
+        <a href = "Reports.html" accesskey="6">Reports</a> 
+        <a href= "Departments.html" accesskey="7"> Departments </a> 
+        <a href= "Settings.html" accesskey="8" > Settings </a>		
+	</nav>
+	     </div>
+    
+    </header>
+	
+       <main>
+			<ul class="breadcrumb">
+			  <li><a href="Home.html">Home</a></li>
+			  <li><a href="Patients.html"> Patients</a></li>
+			  <li>Add a new patient</li>
+			</ul>
+			
+			<h1> Add a new patient </h1>
+			<form class="ADD" id="myform" action=" Add.html" method="get">  
+				<fieldset>
+					<legend> personal information </legend>
+					
+					
+					<img src="ic.png" alt="icon" width= "150" height="150"> <br>
+					<ul>
+					
+						
+						 <li>
+						 <label for="pic" > Upload Picture:</label> 
+						 <input class="file-uploud-input" type="file" accept="Image/*" id="pic"> 
+					
+						 </li>
+				
+					<li> <label for="name"> Full Name:</label><br>
+					<input type="text" id="name" name="name"><br></li>
+					
+				
+					
+					<li> <p> Gender:  </p> 
+  
+					   <input type="radio" name="gender" value ="male" > Male
+					   <input type="radio" name="gender" value ="female" > Female </li>
+					   
+					<li> <p>  Date Of Birth: </p>
+					
+						<select name= "month" id="month">
+						<option> Month </option>
+						<option> 1</option>
+						<option> 2</option>
+						<option> 3</option>
+						<option> 4</option>
+						<option> 5</option>
+						<option> 6</option>
+						<option> 7</option>
+						<option> 8</option>
+						<option> 9</option>
+						<option> 10</option>
+						<option> 11</option>
+						<option> 12</option>
+						</select>
+						
+						<select name= "day" id="day">
+						<option> Day </option>
+						<option> 1</option>
+						<option> 2</option>
+						<option> 3</option>
+						<option> 4</option>
+						<option> 5</option>
+						<option> 6</option>
+						<option> 7</option>
+						<option> 8</option>
+						<option> 9</option>
+						<option> 10</option>
+						<option> 11</option>
+						<option> 12</option>
+						<option> 13</option>
+						<option> 14</option>
+						<option> 15</option>
+						<option> 16</option>
+						<option> 17</option>
+						<option> 18</option>
+						<option> 19</option>
+						<option> 20</option>
+						<option> 21</option>
+						<option> 22</option>
+						<option> 23</option>
+						<option> 24</option>
+						<option> 25</option>
+						<option> 26</option>
+						<option> 27</option>
+						<option> 28</option>
+						<option> 29</option>
+						<option> 30</option>
+						<option> 31</option>
+						</select>
+						
+						
+						<!--  we will use js later to implement the year as drop down list but for now we will use the text field-->
+						<select name= "year" id="year"> </select> </li> 
+					
+					
+					<li>
+						<label for="ID"> National ID:</label>
+						<input type="text" id="ID" name="ID" pattern="[0-9]{10}"><br>
+					</li> 
+					
+					<li> <p> Marital Status:  </p> 
+  
+					   <input type="radio" name="M_Status" value ="Single" > Single
+					   <input type="radio" name="M_Status" value ="Married" > Married 
+					   <input type="radio" name="M_Status" value ="Divorced"> Divorced
+					   <input type="radio" name="M_Status" value ="Widow" > Widow
+					  
+					</li>
+				
+					</ul>
+				</fieldset>
+				
+				<fieldset>
+					<legend> Insurance Information </legend>
+					<ul>
+					 <li>  <label for="insurance"> Insurance Company Name:</label>
+						<input type="text" id="insurance" name="insurance" ><br> </li>
+					</ul>
+					
+					
+				</fieldset>
+				
+				<fieldset>
+					<legend> Contact Information </legend>
+					<ul>
+						<li> <label for="Phone"> Phone Number:</label>
+						<input placeholder="05********" type="tel" id="Phone" name="Phone" pattern="[0-9]"  ><br>
+						</li> 
+						
+						<li> <label for="Address1"> Address:</label> <br>
+						<input placeholder="City" type="text" id="Address1" name="Address"  >
+						<label for="Address2"> </label>
+						<input placeholder="Street Name" type="text" id="Address2" name="Address"  >
+				
+						<li> <label for="Email"> Email:</label> 
+						<input  type="email" id="Email" name="Email"  > </li>
+					</ul>
+					
+				</fieldset>
+				
+				<input type= "button" class ="submit" value="Add" onclick="validateForm(); return false;">
+				<input type ="reset" class="reset" value ="start over">
+			</form>
+				
+				
+				
+						 
+					
+				<h4 id="info"> </h4>	
+				
+				<p id="persona_info">  </p>
+				<p id="insure"> </p>
+				<p id="contact_info"> </p>
+	
+	
+<script src="script.js"> </script>
+	<script src="themeScript.js"> </script> 
+    </main>
+	
+	
+	<!-- الفوتر -->
+<footer>
+<div class="footer">
+  
+  <div class="col">
+    <h5>About us</h5>
+    <p> Salamatuk Management System is a HMS that aims to to make employees' work more 
+      accessible and improve the speed of the complete processes for better results. </p>
+  </div>
+  <div class="col">
+    <h5>Location</h5>
+    <p>  Riyadh - King Abdullah Rd.</p>
+  </div>
+  <div class="col">
+    <h5>contact us</h5>
+    <ul class="socials">
+            <li><a href="https://twitter.com/SalamatukHMS">
+			<img src ="twitter.PNG" alt="twitter" width= "20" height="20"> @SalamatukHMS </a> </li>
+            <li> <img src= "phone.PNG" alt="phone" width= "20" height="20"> +966569698821 </li>
+            <li><a href="mailto:SalamatukHMS@gmail.com">
+	     	<img src ="mail.PNG" alt="mail" width= "20" height="20"> SalamatukHMS@gmail.com </a></li>
+            
+        </ul>
+		</div>
+		<hr>
+		
+        <div class="footer-copyright">
+            <p>copyright &copy;2022 </p>
+        
+        </div>
+  
+<div class="clearfix"></div>
+</div>
+
+
+</footer>
+	
+	
+</body>
+</html>

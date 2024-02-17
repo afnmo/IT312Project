@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER</title>
+	
+    <link rel="stylesheet" href="design.css">
+	<link rel="stylesheet" id="switch_id" href="blueTH.css">
+	
+</head>
+<body onload="showDate()">
+
+    <header>
+        <nav>
+    
+    
+            <div class="logo" style="text-align: left; ">
+                <a href="Home.html"><img src="logo.png" alt="Salamatuk website logo"  ></a>
+    
+            </div>
+    
+            <div>
+                <form class="search">
+                    <input class="search" type="search" placeholder="Search...">
+                </form>
+            </div>
+    
+            <div class="lang-menu">
+                <div class="selected-language">
+                    <!-- <img src="us.svg" alt="united states" width="20" height="20"> -->
+                    English
+
+                </div>
+    
+                <ul>
+                    <li>
+                        <a href="#" class="us">English</a>
+                    </li>
+                    <li>
+                        <a href="#" class="ar">Arabic</a>
+                    </li>
+                </ul>
+    
+            </div>
+    
+    
+        </nav>
+		<div class="main_menu">
+    <nav> 
+	
+	    
+	    <a href = "Home.html" accesskey="h">Home</a> 
+        <a href= "Hospital.html" accesskey="1" > Hospital </a> 
+        <a href= "ER.html" accesskey="2" > ER </a> 
+		<a href = "Doctors.html" accesskey="3">Doctors</a> 
+        <a href= "Patients.html" accesskey="4" > Patients </a> 
+        <a href= "Billing.html" accesskey="5"> Billing </a>
+        <a href = "Reports.html" accesskey="6">Reports</a> 
+        <a href= "Departments.html" accesskey="7"> Departments </a> 
+        <a href= "Settings.html" accesskey="8" > Settings </a>		
+	</nav>
+	     </div>
+    
+    </header>
+	
+    <main>
+			<ul class="breadcrumb">
+			  <li><a href="Home.html">Home</a></li>
+			  <li>ER</li>
+			</ul>
+		<h1> ER shift schedule </h1>
+		<br>
+		<h3 id="date">  </h3>
+	
+		<table class="ragad">
+			<caption>ER shift schedule</caption>
+			<thead> 
+				<tr>
+				
+					<th> Time </th>
+					<th> Sunday </th>
+					<th> Monday </th>
+					<th> Tuesday </th>
+					<th> Wedensday </th>
+					<th> Thursday </th>
+					<th> Friday </th> 
+					<th> Saturday </th> 
+				
+				</tr>
+			</thead>
+			<tbody>
+			
+				<tr>
+					<th> 6:00 - 10:00 </th> 
+					<td rowspan="3"> Dr. Mona </td>
+					<td> Dr. Ahmed </td>
+					<td rowspan="3" colspan="2"> Dr. Rahaf </td>
+					<td colspan="3"> Dr. Abdullah </td>
+				</tr>
+				
+				<tr>
+					<th> 10:00 - 2:00 </th>
+					<td rowspan="3"> Dr. Hala </td>
+					<td colspan="3"> Dr. Alaa </td>
+				</tr>
+				
+				<tr> 
+					<th> 2:00 - 6:00 </th>
+					<td rowspan="2" colspan="3"> Dr. Mona </td>
+				</tr>
+				
+				<tr> 
+					<th> 6:00 - 10:00 </th>
+					<td rowspan ="2"> Dr. Ahmed </td>
+					<td rowspan="3"> Dr. Hala </td>
+					<td rowspan="3"> Dr. Rahaf </td>
+				</tr>
+				
+				<tr>
+					<th> 10:00 - 2:00 </th>
+					<td rowspan="2"> Dr. Abdullah </td>
+					<td rowspan="2"> Dr. Alaa </td>
+					<td rowspan="2"> Dr. Mona </td>
+					<td rowspan="2"> Dr. Hala </td>
+				</tr>
+				
+				<tr>
+					<th> 2:00 - 6:00 </th>
+					<td> Dr. Rahaf </td>
+				</tr>
+			</tbody>
+			
+		</table>		
+				
+					
+	<script src="script.js"> </script>
+	<script src="themeScript.js"> </script> 
+
+    </main>
+	
+	
+	<!-- الفوتر -->
+<footer>
+<div class="footer">
+  
+  <div class="col">
+    <h5>About us</h5>
+    <p> Salamatuk Management System is a HMS that aims to to make employees' work more 
+      accessible and improve the speed of the complete processes for better results. </p> 
+  </div>
+  <div class="col">
+    <h5>Location</h5>
+    <p>  Riyadh - King Abdullah Rd.</p> 
+  </div>
+  <div class="col">
+    <h5>contact us</h5>
+    <ul class="socials">
+            <li><a href="https://twitter.com/SalamatukHMS">
+			<img src ="twitter.PNG" alt="twitter" width= "20" height="20"> @SalamatukHMS </a> </li>
+            <li> <img src= "phone.PNG" alt="phone" width= "20" height="20"> +966569698821 </li>
+            <li><a href="mailto:SalamatukHMS@gmail.com">
+	     	<img src ="mail.PNG" alt="mail" width= "20" height="20"> SalamatukHMS@gmail.com </a></li> 
+            
+        </ul>
+		</div>
+		<hr>
+        <div class="footer-copyright">
+           <p>copyright &copy;2022 </p>
+        
+        </div>
+  
+<div class="clearfix"></div>
+</div>
+
+
+</footer>
+	
+	
+</body>
+</html>

@@ -1,0 +1,126 @@
+header {
+	/* light yellow*/
+    background-color: #fffee0;
+	
+}
+
+/* عشان لون عناصر النافقيشن تصير نفس اللغة فوق */
+nav a {
+	
+    color: #0f5c0f;
+}
+
+.footer {
+	/* yellow*/
+ background-color: #F5F5DC;
+}
+
+table.ragad tbody {
+ /*baby green*/
+background-color: #c1decc;}
+
+
+h1 {
+	
+color: #0f5c0f;}
+
+h3 {
+	
+    color: #0c5e39;
+}
+
+ul.breadcrumb {
+  
+background-color: #e0e0c3;}
+
+
+ul.breadcrumb li a {
+color: #01752e;}
+
+
+/*dark blue*/
+input.submit:hover {
+    background-color: #4ead73;
+    color: white;
+}
+
+input.reset:hover {
+    background-color: #4ead73;
+    color: white;
+}
+
+
+.forms {
+
+   /* green */
+background-color: rgb(209, 242, 235);}
+
+ /*baby green*/
+.flex-container {
+  
+background-color: #fbfcd4;}
+
+main.pmain {
+
+    background-color: #fbfcd4;
+}
+
+
+
+.pinfo {
+	/* green */
+
+    background-color: rgb(209, 242, 235);
+    
+color: #5F9EA0;}
+
+.rahaf th {
+	
+    background-color: #2070A6;
+    color: white;
+}
+table.rahaf tbody {
+   
+background-color: lightyellow;}
+
+.ragad th {
+    background-color: #13753a;
+    color: white;
+}
+form.ADD {
+  
+    background-color: #97c9b4;
+
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+button {
+background-color: green; }
+
+.doctor-table,
+.doctor-table td {
+
+    text-align: center;
+    border: 2px solid green;
+}
+
+
+main {
+    padding: 10px;
+    background-image: url(background2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+#h1_main { background-color:#c1decc; }
+
+.footer .col h5 {
+ 
+    color: #0f5c0f; 
+}
